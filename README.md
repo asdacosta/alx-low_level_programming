@@ -1,2 +1,2 @@
-**Shell readme file**
-* Has a file which has a script
+**Info about README.md**
+* Contains directories which also contains files for low level programming.
