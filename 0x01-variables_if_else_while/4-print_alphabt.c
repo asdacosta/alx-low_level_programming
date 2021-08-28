@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * main - Prints the alphabet without q and e.
@@ -9,16 +7,18 @@
  */
 int main(void)
 {
-	int i;
+	char alp;
 
-	for (i = 97; i < 123; i++)
+	for (alp = 'a'; alp <= 'z'; alp++)
 	{
-		if (i != 101 && i != 113)
+		if (alp != 'q' && alp != 'e')
 		{
-			putchar(i);
+			putchar(alp);
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
 
