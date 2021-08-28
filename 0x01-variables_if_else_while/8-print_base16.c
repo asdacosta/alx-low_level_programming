@@ -7,17 +7,20 @@
  */
 int main(void)
 {
-	int i;
+	int num;
+	char alp;
 
-	for (i = 48; i < 58; i++)
+	for (num = 0; num < 10; num++)
 	{
-		putchar(i);
+		putchar((num % 16) + '0');
 	}
-	for (i = 97; i < 103; i++)
+	for (alp = 'a'; alp <= 'f'; alp++)
 	{
-		putchar(i);
+		putchar(alp);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
 
