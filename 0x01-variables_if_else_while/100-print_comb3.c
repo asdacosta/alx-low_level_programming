@@ -7,30 +7,24 @@
  */
 int main(void)
 {
-	int i, e;
+	int n, m;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (n = '0'; n <= '9'; n++)
 	{
-		i = 48;
-		while (i < 58)
+		for (m = '0'; m <= '9'; m++)
 		{
-			if (e != i && e < i)
+			if (n < m)
 			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
+				putchar(n);
+				putchar(m);
+
+				if (n != '8')
 				{
-					break;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
 			}
-			i++;
 		}
-		e++;
 	}
 	putchar('\n');
 	return (0);
