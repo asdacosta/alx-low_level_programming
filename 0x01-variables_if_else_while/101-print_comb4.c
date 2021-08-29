@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints possible different combinations of three digits between 012 to 789.
+ * main - Prints possible different combinations of three digits 
+ * between 012 and 789
  *
  * Return: Always 0 (Success)
  */
@@ -28,9 +29,11 @@ int main(void)
 					}
 				}
 			}
-		}	
+		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
 
