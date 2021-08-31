@@ -19,10 +19,14 @@ void times_table(void)
 			else
 			{
 				if ((i * e) < 10)
+				{
 					_putchar(' ');
-				else
+				}
+				else 
+				{
 					_putchar(i * e / 10 + '0');
 					_putchar(i * e % 10 + '0');
+				}
 				if (e == 9)
 				{
 					_putchar('\n');
