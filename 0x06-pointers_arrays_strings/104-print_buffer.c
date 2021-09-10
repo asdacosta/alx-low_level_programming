@@ -1,65 +1,43 @@
+#include "holberton.h"
 #include <stdio.h>
-#include "main.h"
 
 /**
- * print_buffer - Prints a buffer
- *
- * @b: Char character
- *
- * @size: Integer character
- *
- * Return: 0
+ * print_buffer - prints a buffer
+ * @b: buffer.
+ * @size: size of buffer.
+ * Return: no return.
  */
 void print_buffer(char *b, int size)
 {
-	int i, count = 0, size2 = size;
-	char *p = b;
+	int j, k, l;
 
-	if (size == 0)
+	if (size <= 0)
 		printf("\n");
-
-	while (size > 0)
+	else
 	{
-		printf("%08x:", count);
-
-		i = 0;
-
-		while (size > 0 && i < 10)
+		for (j = 0; j < size; j += 10)
 		{
-			if (!(i % 2))
-				printf(" ");
-			printf("%02x", *p++);
-
-			i++;
-			size--;
-			count++;
+			printf("%.8x:", j);
+			for (k = j; k < j + 10; k++)
+			{
+				if (k % 2 == 0)
+					printf(" ");
+				if (k < size)
+					printf("%.2x", *(b + k));
+				else
+					printf("  ");
+			}
+			printf(" ");
+			for (l = j; l < j + 10; l++)
+			{
+				if (l >= size)
+					break;
+				if (*(b + l) < 32 || *(b + l) > 126)
+					printf("%c", '.');
+				else
+					printf("%c", *(b + l));
+			}
+			printf("\n");
 		}
-
-		while (count % 10 != 0)
-		{
-			if (!(count % 2))
-				printf(" ");
-
-			printf("  ");
-			count++;
-		}
-
-		printf(" ");
-
-		i = 0;
-
-		while (size2 > 0 && i < 10)
-		{
-			if (*b > 31 && *b != 127)
-				printf("%c", *b);
-			else
-				printf(".");
-
-			size2--;
-			i++;
-			b++;
-		}
-
-		printf("\n");
 	}
 }
