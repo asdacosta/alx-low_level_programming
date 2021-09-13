@@ -1,22 +1,12 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints the chessboard
- * @a: input pointer.
+ * set_string - sets the value of a pointer to a char
+ * @s: source adress.
+ * @to: target adress.
  * Return: no return.
  */
-void print_chessboard(char (*a)[8])
+void set_string(char **s, char *to)
 {
-	unsigned int i, m = 0;
-
-	for (i = 0; i < 64; i++)
-	{
-		if (i % 8 == 0 && i != 0)
-		{
-			m = i;
-			_putchar('\n');
-		}
-		_putchar(a[i / 8][i - m]);
-	}
-	_putchar('\n');
+	*s = to;
 }
