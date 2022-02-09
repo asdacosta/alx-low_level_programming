@@ -1,13 +1,13 @@
 #include <stdio.h>
-
 /**
- * main - Prints "Programming is like..."
+ * main - Prints "Programming is like a multilingual puzzle"
+        followed by a new line.
  * 
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    puts("Programming is like building a multilingual puzzle \n");
+    puts("Programming is like building a multilingual puzzle \n\n");
 
     return (0);
 }
