@@ -5,7 +5,6 @@
 /**
  * main - Assigns random number to variable each time it is executed and prints
  *	whether it is negative or positive.
- * @n: Random number
  *
  * Return: Always 0 (Success)
  */
