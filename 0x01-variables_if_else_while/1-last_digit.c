@@ -5,8 +5,6 @@
 /**
  * main - Prints last digit of number and tells if greater than 5, is 0 or less
  *	than 6 and not 0.
- * @n: Random number
- * @ld: Last digit
  *
  * Return: Always 0 (success)
  */
