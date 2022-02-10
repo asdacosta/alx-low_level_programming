@@ -9,7 +9,6 @@ int main(void)
 {
 	int m;
 
-	m %= 16;
 	for (m = '0'; m <= '9'; m++)
 		putchar(m);
 	for (m = 'a'; m <= 'f'; m++)
