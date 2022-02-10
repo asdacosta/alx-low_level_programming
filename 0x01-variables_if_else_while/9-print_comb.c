@@ -10,7 +10,8 @@ int main(void)
 	int m;
 
 	for (m = '0'; m <= '9'; )
-		putchar(m++  + ',');
+		putchar(m + ',');
+		m += 1;
 	putchar('\n');
 
 	return (0);
