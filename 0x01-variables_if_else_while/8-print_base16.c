@@ -1,24 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 0 to 9 and letters between a to f.
+ * main - Prints numbers of base 16 "0123456789abcdef"
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num;
-	char alp;
+	int m;
 
-	for (num = 0; num < 10; num++)
-	{
-		putchar((num % 16) + '0');
-	}
-	for (alp = 'a'; alp <= 'f'; alp++)
-	{
-		putchar(alp);
-	}
-
+	m %= 16;
+	for (m = '0'; m <= '9'; m++)
+		putchar(m);
+	for (m = 'a'; m <= 'f'; m++)
+		putchar(m);
 	putchar('\n');
 
 	return (0);
