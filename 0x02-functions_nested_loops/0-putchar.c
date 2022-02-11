@@ -2,17 +2,19 @@
 
 /**
  * main - Prints _putchar followed by a new line.
- * @c: characters to be printed
  *
  * Return: Always 9 (Success)
  */
 	int main(void)
 {
-	char *c;
-	*c="_putchar";
+	char m[] = "_putchar\n";
+	int n = 0;
 
-	_putchar(*c);
-	_putchar('\n');
+	while (m[n])
+	{
+		_putchar(m[n]);
+		n++;
+	}
 
 	return (0);
 }
