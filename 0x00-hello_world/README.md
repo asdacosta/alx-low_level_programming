@@ -4,8 +4,8 @@ Completed this project during **Full Stack Software Engineering** from **Holbert
 ## Objective
 Learning the basic commmands like puts, printf, putchar and compilation with gcc in **C language**
 ## Tested on
-* Ubuntu
-* Git Bash
+* Ubuntu 20.04.2 LTS
+* Git Bash 2.32.0
 * Visual Studio Code
 ## Files
 | Filename | Description |
