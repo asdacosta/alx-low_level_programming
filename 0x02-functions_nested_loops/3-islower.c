@@ -7,9 +7,14 @@
  */
 int _islower(int c)
 {
-	for (c = 'a'; c <= 'z'; c++)
-		return (1);
-	for (c = 'A'; c <= 'Z'; c++)
-		return (0);
+	int n;
+
+	for (n = 'a'; n <= 'z'; n++)
+	{
+		if (c = 'n')
+			return (1);
+		else
+			return (0);
+	}
 }
 
