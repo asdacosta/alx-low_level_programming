@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints smallest combinations of three digits. Each number is separated by
- *	comma ',' and space.
+ * main - Prints smallest combinations of three digits. Each number is
+ *	separated by a comma ',' and space.
  *
  * Return: Always 0 (Success)
  */
@@ -22,7 +22,7 @@ int main(void)
 					putchar(m);
 					putchar(p);
 
-					if ( n != '7')
+					if (n != '7')
 					{
 						putchar(',');
 						putchar(' ');
