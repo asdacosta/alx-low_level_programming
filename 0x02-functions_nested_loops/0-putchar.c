@@ -8,6 +8,7 @@
  */
 	int main(void)
 {
+	int c;
 	c="_putchar";
 
 	_putchar(c);
