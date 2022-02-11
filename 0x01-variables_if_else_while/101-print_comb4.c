@@ -16,13 +16,13 @@ int main(void)
 		{
 			for (p = '2'; p <= '9'; p++)
 			{
-				if (n < m < p)
+				if ((n < m) && (m < p))
 				{
-					putchar(m);
 					putchar(n);
+					putchar(m);
 					putchar(p);
 
-					if (n != '7')
+					if ( n != '7')
 					{
 						putchar(',');
 						putchar(' ');
