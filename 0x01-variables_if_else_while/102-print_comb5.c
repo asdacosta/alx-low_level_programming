@@ -1,44 +1,49 @@
 #include <stdio.h>
 
 /**
- * main - Prints combinations of two two-digit numbers from 0 to 99.
- *	The two numbers are separated by space and combination of
- *	numbers are separated by comma and followed by space.
+ * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int n, m;
+int i, e, g, h, op1, op2;
 
-	for (n = '0'; n <= '9'; n++)
+i = e = g = h = 48;
+while (h < 58)
+{
+	g = 48;
+	while (g < 58)
 	{
-		for (m = '0'; m <= '9'; m++)
+		e = 48;
+		while (e < 58)
 		{
-				if ((n = m) || (n > m))
+			i = 48;
+			while (i < 58)
+			{
+				op1 = (h * 10) + g;
+				op2 = (e * 10) + i;
+				if (op1 < op2)
 				{
-					putchar(n);
-					putchar(m);
-				}
-
-				if (n != '9')
+					putchar(h);
+					putchar(g);
 					putchar(' ');
-				
-				if ((n < m) || (n = m) || (n > m))
-				{
-					putchar(n);
-					putchar(m);
-				}
-
-				if (m != '9')
-				{
+					putchar(e);
+					putchar(i);
+					if (h == 57 && g == 56 && e == 57 && i == 57)
+						break;
 					putchar(',');
 					putchar(' ');
 				}
+				i++;
+			}
+			e++;
 		}
+		g++;
 	}
-	putchar('\n');
-
-	return (0);
+	h++;
+}
+putchar('\n');
+return (0);
 }
 
