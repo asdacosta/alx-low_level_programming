@@ -15,10 +15,13 @@ int main(void)
 	{
 		for (m = '0'; m <= '9'; m++)
 		{
-				putchar(n);
-				putchar(m);
+				if ((n = m) || (n > m));
+				{
+					putchar(n);
+					putchar(m);
+				}
 
-				if (n != '10')
+				if (n != '9')
 					putchar(' ');
 				
 				if ((n < m) || (n = m) || (n > m))
@@ -27,7 +30,7 @@ int main(void)
 					putchar(m);
 				}
 
-				if (m != '10')
+				if (m != '9')
 				{
 					putchar(',');
 					putchar(' ');
