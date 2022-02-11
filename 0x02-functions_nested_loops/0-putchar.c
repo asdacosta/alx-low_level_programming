@@ -6,10 +6,11 @@
  *
  * Return: Always 9 (Success)
  */
-	char main(void)
+	int main(void)
 {
+	char *c="_putchar";
 
-	_putchar("_putchar");
+	_putchar(*c);
 	_putchar('\n');
 
 	return (0);
