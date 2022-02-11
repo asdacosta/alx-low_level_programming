@@ -13,8 +13,7 @@ int _islower(int c)
 	{
 		if (c == 'n')
 			return (1);
-		else
-			return (0);
 	}
+	return (0);
 }
 
