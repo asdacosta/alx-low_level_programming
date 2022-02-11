@@ -10,6 +10,7 @@ int main(void)
 	int n = '0';
 	int m;
 
+	n != m;
 	while ((n >= '0') && (n <= '8'))
 	{
 		putchar(n);
@@ -25,7 +26,7 @@ int main(void)
 			}
 		}
 
-		n++;
+		putchar(n + '1');
 	}
 
 	putchar('\n');
