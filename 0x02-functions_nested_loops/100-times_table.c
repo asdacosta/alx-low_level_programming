@@ -12,7 +12,15 @@ void print_times_table(int n)
 	{
 		printf("\n");
 	}
-	else if ((n <= 15) && (n >= 0))
+	else if (n <= 15)
+	{
+		for (; n <= 15; n--)
+		{
+			printf("%d, ", n);
+			printf("\n");
+		}
+	}
+	else if (n >= 0)
 	{
 		for (; n >= 0; n++)
 		{
