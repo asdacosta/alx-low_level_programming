@@ -10,7 +10,7 @@ void jack_bauer(void)
 	int m, n, p, q;
 
 	m = '0';
-	while (m <= '2)
+	while (m <= '2')
 	{
 		_putchar(m);
 
@@ -19,6 +19,7 @@ void jack_bauer(void)
 			_putchar(n);
 			_putchar(':');
 		}
+		m++;
 	}
 
 	p = '0';
@@ -30,6 +31,7 @@ void jack_bauer(void)
 		{
 			_putchar(q);
 		}
+		p++;
 	}
 }
 
