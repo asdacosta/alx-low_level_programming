@@ -18,25 +18,24 @@ void jack_bauer(void)
 		{
 			_putchar(n);
 			n++;
-			break
+			break;
 		}
 		_putchar(':');
-		m++;
-	}
 
-	p = '0';
-	while (p <= '5')
-	{
-		_putchar(p);
-
-		for (q = '0'; q <= '9'; q++)
+		p = '0';
+		while (p <= '5')
 		{
-			_putchar(q);
-			q++;
-			break
+			_putchar(p);
+			
+			for (q = '0'; q <= '9'; q++)
+			{
+				_putchar(q);
+				q++;
+				break;
+			}
+			p++;
 		}
-		_putchar('\n');
-		p++;
+		m++;
 	}
 }
 
