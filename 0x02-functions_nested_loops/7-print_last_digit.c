@@ -6,11 +6,13 @@
  *
  * Return: Last digit of number
  */
-int print_last_digit(int n)
+int print_last_digit(int n[])
 {
 	if ((n >= -9) && (n <=9))
-			return (n);
+			return (n[0]);
 	else if ((n < -9) && (n > 9))
 			return (n[-1]);
+
+	return (0);
 }
 
