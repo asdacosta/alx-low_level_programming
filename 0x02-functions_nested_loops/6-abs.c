@@ -8,10 +8,12 @@
  */
 int _abs(int n)
 {
+	int m *= '-1';
+
 	if (n >= 0)
 		_putchar(n);
 	else 
-		_putchar(-n);
+		_putchar(m);
 
 	return (0);
 }
