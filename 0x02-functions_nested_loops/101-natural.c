@@ -8,7 +8,7 @@
  */
 void main(void)
 {
-	int m, n, m3, m5, result3, result5, end;
+	int m, n, m3, m5, result3, result5, end, a, b;
 	m3 = 1024 / 3;
 	m5 = 1024 / 5;
 
@@ -18,19 +18,18 @@ void main(void)
 		{
 			for (n = 1; n < m3; n++)
 			{
-				result3 = m * n;
+				result3 = m * n
+				for (a = 5; a < m5; a++)
+				{
+					for (b = 1; b < m5; b++)
+					{
+						result5 = a * b;
+						end = result3 + result5;
+						printf("%d ", end);
+					}
+				}
 			}
 		}
-		for (m = 5; m < m5; m++)
-		{
-			for (n = 1; n < m5; n++)
-			{
-				result5 = m * n;
-			}
-		}
-
-		end = result3 + result5;
-		printf("%d, ", end);
 
 	}
 	printf("\n");
