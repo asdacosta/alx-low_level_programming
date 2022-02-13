@@ -30,7 +30,7 @@ void main(void)
 		}
 
 		end = result3 + result5;
-		printf(end);
+		printf("%d, ", end);
 
 	}
 	printf("\n");
