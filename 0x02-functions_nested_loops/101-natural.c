@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Computes and prints the sum of all the multiples of 3 or 5 
+ * main - Computes and prints the sum of all the multiples of 3 or 5
  *	below 1024
  *
  * Return: Always 0.
@@ -13,7 +13,7 @@ int main(void)
 	for (a = 1; a < 1024; a++)
 	{
 		if ((a % 3) == 0 || (a % 5) == 0)
-			b +=a;
+			b += a;
 	}
 	printf("%d\n", b);
 
