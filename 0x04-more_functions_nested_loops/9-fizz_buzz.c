@@ -13,7 +13,7 @@ int main(void)
 
 	n = 1;
 	printf("%d", n);
-	for (n = 1; n <= 100; n++)
+	for (n = 2; n <= 100; n++)
 	{
 		if (n % 3 == 0)
 		{
