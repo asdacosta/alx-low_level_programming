@@ -1,25 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - Prints largest prime factor
- *
- * Return: Void
+ * main - prints largest prime factor.
+ * Return: Always 0.
  */
 
 int main(void)
 {
-	long int n, m;
+	long int n, fp;
 
 	n = 612852475143;
-	for (m = 2; m <= n; m++)
+	for (fp = 2; fp <= n; fp++)
 	{
-		if (n % m == 0)
+		if (n % fp == 0)
 		{
-			n /= m;
-			m--;
+			n /= fp;
+			fp--;
 		}
 	}
-	printf("%ld\n", m);
+	printf("%ld\n", fp);
 	return (0);
 }
 
