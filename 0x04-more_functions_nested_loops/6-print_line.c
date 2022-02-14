@@ -8,12 +8,9 @@
  */
 void print_line(int n)
 {
-	for (n = 0; n <= 10; n++)
+	for (n = '0'; n <= '10'; n++)
 	{
-		_putchar((n / 10) + 48);
-		_putchar((n % 10) + '0');
-
-		if (n == 0)
+		if (n == '0')
 		{
 			_putchar('\n');
 		}
