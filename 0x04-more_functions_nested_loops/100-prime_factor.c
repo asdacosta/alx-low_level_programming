@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * main - Prints largest prime factor
+ * 
+ * Return: Void
+ */
 int main(void)
 {
 	int n, m;
