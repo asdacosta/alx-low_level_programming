@@ -14,33 +14,33 @@ int main(void)
 	m5 = 100 / 5;
 	m15 = 100 / 15;
 
-	for (n = 1; n <= 100; n++)
+	for (n = 1; n < 100; n++)
 	{
-		for (m = 1; m <= m3 ; m++)
+		if (n == (3 * m))
 		{
-			if (n == (3 * m))
+			for (m = 1; m <= m3 ; m++)
 			{
 				printf("Fizz ");
-				break;
 			}
 		}
-		for (m = 1; m <= m5; m++)
+		else if (n == (5 * m))
 		{
-			if (n == (5 * m))
+			for (m = 1; m <= m5; m++)
 			{
-				printf("Buzz ");
-				break;
+					printf("Buzz ");
 			}
 		}
-		for (m = 1; m <= m15; m++)
+		else if (n == (15 * m))
 		{
-			if (n == (15 * n))
+			for (m = 1; m <= m15; m++)
 			{
 				printf("FizzBuzz ");
-				break;
 			}
 		}
-		printf("%d ", n);
+		else
+		{
+			printf("%d ", n);
+		}
 	}
 	printf("\n");
 
