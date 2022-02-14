@@ -13,23 +13,23 @@ int main(void)
 
 	for (n = 1; n <= 100; n++)
 	{
-		for (m = 1; m <= 50; m++)
+		for (m = 1; m <= 100; m++)
 			{
-				if (n == (3 * m))
+				if (n == (3 * m) && (n != 100))
 				{
 					printf("Fizz ");
 				}
-				else if (n == (5 * m))
+				else if (n == (5 * m) && (n != 100))
 				{
 					printf("Buzz ");
 				}
-				else if (n == (15 * m))
+				else if (n == (15 * m) && (n != 100))
 				{
 					printf("FizzBuzz ");
 				}
 				else
 				{
-					printf("%d ", n)
+					printf("%d ", n);
 				}
 			}
 	}
