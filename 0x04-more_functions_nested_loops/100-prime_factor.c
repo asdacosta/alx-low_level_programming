@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Prints largest prime factor
@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int n, m;
+	long int n, m;
 
 	n = 612852475143;
 	for (m = 2; m <= n; m++)
@@ -18,7 +18,7 @@ int main(void)
 			m--;
 		}
 	}
-	printf(%ld\n", m);
+	printf("%ld\n", m);
 	return (0);
 }
 
