@@ -19,18 +19,28 @@ int main(void)
 		for (m = 1; m <= m3 ; m++)
 		{
 			if (n == (3 * m))
+			{
 				printf("Fizz ");
+				break;
+			}
 		}
 		for (m = 1; m <= m5; m++)
 		{
 			if (n == (5 * m))
+			{
 				printf("Buzz ");
+				break;
+			}
 		}
 		for (m = 1; m <= m15; m++)
 		{
 			if (n == (15 * n))
+			{
 				printf("FizzBuzz ");
+				break;
+			}
 		}
+		printf("%d ", n);
 	}
 	printf("\n");
 
