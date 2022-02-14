@@ -9,33 +9,21 @@
  */
 int main(void)
 {
-	int n, m, m3, m5, m15;
-	m3 = 100 / 3;
-	m5 = 100 / 5;
-	m15 = 100 / 15;
+	int n;
 
 	for (n = 1; n < 100; n++)
 	{
-		if (n == (3 * m))
+		if (n % 3 == 0)
 		{
-			for (m = 1; m <= m3 ; m++)
-			{
-				printf("Fizz ");
-			}
+			printf("Fizz ");
 		}
-		else if (n == (5 * m))
+		else if (n % 5 == 0)
 		{
-			for (m = 1; m <= m5; m++)
-			{
-					printf("Buzz ");
-			}
+			printf("Buzz ");
 		}
-		else if (n == (15 * m))
+		else if ((n % 3 == 0) && (n % 5 == 0))
 		{
-			for (m = 1; m <= m15; m++)
-			{
-				printf("FizzBuzz ");
-			}
+			printf("FizzBuzz ");
 		}
 		else
 		{
