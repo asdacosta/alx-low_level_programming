@@ -4,7 +4,7 @@
  * _puts - Prints a string followed by a new line
  * @str: Pointer to string
  *
- * Return: Always 0
+ * Return: Void
  */
 void _puts(char *str)
 {
