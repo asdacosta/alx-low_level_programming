@@ -8,17 +8,16 @@
  */
 int _strlen(char *s)
 {
-	int n, m, len;
+	int n, m;
 
 	for (n = 0; n <= 20; n++)
 	{
 		for (m = 0; m <= 20; m++)
 		{
 			*(s + n) = m + 1;
-			len = *(s + n);
 		}
+		s = *(s + n);
 
-		_putchar((len % 10) + '0');
 	}
 	return (0);
 }
