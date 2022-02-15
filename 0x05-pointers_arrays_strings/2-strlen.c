@@ -20,5 +20,6 @@ int _strlen(char *s)
 
 		_putchar((len % 10) + '0');
 	}
+	return (0);
 }
 
