@@ -19,7 +19,7 @@ void print_number(int n)
 	{
 		p = n;
 	}
-	
+
 	d = p;
 	count = 1;
 
