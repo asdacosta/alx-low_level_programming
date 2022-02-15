@@ -10,13 +10,13 @@ int _strlen(char *s)
 {
 	int n, m;
 
-	for (n = 0; n <= 20; n++)
+	for (n = 0; n <= 16; n++)
 	{
-		for (m = 0; m <= 20; m++)
+		for (m = 0; m <= 16; m++)
 		{
 			*(s + n) = m + 1;
 		}
-		s = *(s + n);
+		*s = *(s + n);
 
 	}
 	return (0);
