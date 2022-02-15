@@ -8,7 +8,6 @@ Learning more functions and nested loops **C language**
 * Git Bash 2.32.0
 * Visual Studio Code
 ## Files
-All of the following files are programs written in C:
 
 | Filename | Description |
 | -------- | ----------- |
