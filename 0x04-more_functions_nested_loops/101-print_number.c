@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_number - Prints an integer
+ * @n: The integer
+ *
+ * Return: Void
+ */
 void print_number(int n)
 {
 	int m, d, count;
