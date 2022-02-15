@@ -1,12 +1,12 @@
-# More functions, more nested loops
-
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about nested loops in **C language**.
-
-## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
-
+> # More functions, more nested loops
+## Origin
+Completed this project during **Full Stack Software Engineering** from **Holberton School** at **ALX School**
+## Objective
+Learning more functions and nested loops **C language**
+## Tested on
+* Ubuntu 20.04.2 LTS
+* Git Bash 2.32.0
+* Visual Studio Code
 ## Files
 All of the following files are programs written in C:
 
