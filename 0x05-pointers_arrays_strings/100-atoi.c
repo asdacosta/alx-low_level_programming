@@ -25,11 +25,8 @@ int _atoi(char *s)
 			printf("\n");
 
 		}
-		else
-		{
-			return (0);
-			printf("\n");
-		}
 	}
+
+	return (0);
 }
 
