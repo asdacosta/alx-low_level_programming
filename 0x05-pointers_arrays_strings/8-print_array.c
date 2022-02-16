@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
- * print_array - prints n elements of an array of integers.
- * @a: input array.
- * @n: input n elements
- * Return: no return.
+ * print_array - Prints an array of integers separated by comma.
+ * @a: Pointer to array
+ * @n: Number of elements
+ *
+ * Return: Void
  */
 void print_array(int *a, int n)
 {
-	int i = 0;
+	int m;
 
-	for (; i < n; i++)
+	for (m = 0; m <= n; m++)
 	{
-		printf("%d", *(a + i));
-		if (i != (n - 1))
-			printf(", ");
+		printf("%d, ", a[m]);
 	}
 	printf("\n");
 }
+
