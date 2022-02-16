@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Generates random valid passwords
@@ -21,6 +22,7 @@ int main(void)
 		printf("%c", r);
 	}
 	printf("%c\n", (2772 -c));
+
 	return (0);
 }
 
