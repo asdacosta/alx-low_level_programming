@@ -1,15 +1,17 @@
-# Pointers, arrays and strings
+> # Pointers, arrays and strings
 
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about pointers and arrays in **C language**.
+## Origin
+Completed this project during **Full Stack Software Engineering** from **Holberton School** at **ALX School**
 
-## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
+## Objective
+Learning pointers, arrays and more data structures, strings and memory layout in **C language**
+
+## Tested on
+* Ubuntu 20.04.2 LTS
+* Git Bash 2.32.0
+* Visual Studio Code
 
 ## Files
-All of the following files are programs written in C:
-
 | Filename | Description |
 | -------- | ----------- |
 | `0-reset_to_98.c` | Takes a pointer to an `int` as parameter and updates the value it points to `98` |
