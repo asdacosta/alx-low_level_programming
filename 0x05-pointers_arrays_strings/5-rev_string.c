@@ -1,24 +1,32 @@
 #include "main.h"
 
 /**
- * rev_string - Reverses a string
+ * rev_string - everses q string
  * @s: Pointer to string
  *
  * Return: Always 0
  */
 void rev_string(char *s)
 {
-	int n = 0;
+	int count = 0, i, j;
+	char *str, temp;
 
-	while (n >= 0)
+	while (count >= 0)
+	{
+		if (s[count] == '\0')
+			break;
+		count++;
+	}
+	str = s;
+
+	for (i = 0; i < (count - 1); i++)
+	{
+		for (j = i + 1; j > 0; j--)
 		{
-			_putchar(s[n]);
-
-			if (n = 32)
-			{
-				_putchar(s[-n]);
-			}
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
 		}
-	_putchar('\n');
+	}
 }
 
