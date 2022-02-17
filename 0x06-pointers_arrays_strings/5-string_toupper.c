@@ -16,7 +16,7 @@ char *string_toupper(char *s)
 		{
 			*(s + n) -= 32;
 		}
-		else if (*(s + n) >= 65 && *(s + n) <= 90)
+		else
 		{
 			*(s + n) = *(s + n);
 		}
