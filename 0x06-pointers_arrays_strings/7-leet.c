@@ -1,29 +1,38 @@
 #include "main.h"
-/**
- * leet - encodes a string into 1337
- * @s: input string.
- * Return: the pointer to dest.
- */
 
+/**
+ * leet - Encodes a string into 1337
+ * @s: Pointer to string
+ *
+ * Return: Encoded string
+ */
 char *leet(char *s)
 {
-	int count = 0, i;
-	int low_letters[] = {97, 101, 111, 116, 108};
-	int upp_letters[] = {65, 69, 79, 84, 76};
-	int numbers[] = {52, 51, 48, 55, 49};
+	int n;
 
-	while (*(s + count) != '\0')
+	for (n = 0; n >= 0 && n != '\0'; n++)
 	{
-		for (i = 0; i < 5; i++)
+		if ((*(s + n) == 'a') || (*(s + n) == 'A'))
 		{
-			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
-			{
-				*(s + count) = numbers[i];
-				break;
-			}
+			*(s + n) = '4';
 		}
-		count++;
+		else if ((*(s + n) == 'e') || (*(s + n) == 'E'))
+		{
+			*(s + n) = '3';
+		}
+		else if ((*(s + n) == 'o') || (*(s + n) == 'O'))
+		{
+			*(s + n) = '0';
+		}
+		else if ((*(s + n) == 't') || (*(s + n) == 'T'))
+		{
+			*(s + n) = '7';
+		}
+		else if ((*(s + n) == 'l') || (*(s + n) == 'L'))
+		{
+			*(s + n) = '1';
+		}
 	}
-
 	return (s);
 }
+
