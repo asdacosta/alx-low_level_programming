@@ -14,7 +14,7 @@ char *rot13(char *s)
 
 	while (*(s + n) != '\0')
 	{
-		for (m = 0; m <= 52; m++)
+		for (m = 0; m < 52; m++)
 		{
 			if (*(s + n) == alp[m])
 			{
