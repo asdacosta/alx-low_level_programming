@@ -2,7 +2,7 @@
 /**
  * cap_string - capitalizes all words of a string
  * @s: input string.
- * Return: the pointer to dest.
+ * Return: Capitalized string.
  */
 
 char *cap_string(char *s)
