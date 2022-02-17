@@ -9,8 +9,8 @@
 char *rot13(char *s)
 {
 	int n = 0, m;
-	int alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	chr rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char alp[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*(s + n) != '\0')
 	{
@@ -18,7 +18,7 @@ char *rot13(char *s)
 		{
 			if (*(s + n) == alp[m])
 			{
-				*(s + n) = rot13[];
+				*(s + n) = rot13[m];
 			}
 		}
 		n++;
