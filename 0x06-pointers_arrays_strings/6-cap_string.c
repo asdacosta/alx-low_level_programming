@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * cap_string(char *) - Capitilized first letter of every word
+ * cap_string - Capitilized first letter of every word
  * @s: Pointer to string
  *
  * Return: Capitalized string
