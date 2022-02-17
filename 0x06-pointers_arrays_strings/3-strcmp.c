@@ -21,7 +21,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			m = 15;
 		}
-		else
+		else if (*(s1 + n) == *(s2 + n))
 		{
 			m = 0;
 		}
