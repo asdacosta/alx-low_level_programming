@@ -24,6 +24,6 @@ char *rot13(char *s)
 		}
 		n++;
 	}
-	return (0);
+	return (s);
 }
 
