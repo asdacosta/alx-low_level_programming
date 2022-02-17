@@ -9,24 +9,16 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int n, m;
+	int i = 0, op = 0;
 
-	for (n = 0; n >= 0 && n <= '\0'; n++)
+	while (op == 0)
 	{
-		if (*(s1 + n) < *(s2 + n))
-		{
-			m = -15;
-		}
-		else if (*(s1 + n) > *(s2 + n))
-		{
-			m = 15;
-		}
-		else if (*(s1 + n) == *(s2 + n))
-		{
-			m = 0;
-		}
+		if ((*(s1 + i) == '\0') && (*(s2 + i) == '\0'))
+			break;
+		op = *(s1 + i) - *(s2 + i);
+		i++;
 	}
 
-	return (m);
+	return (op);
 }
 
