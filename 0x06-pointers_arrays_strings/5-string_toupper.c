@@ -8,21 +8,19 @@
  */
 char *string_toupper(char *s)
 {
-	char n, m;
+	int n;
 
-	for (n = 0; n >= 0 && n <= '\0'; n++)
+	for (n = 0; n >= 0 && n != '\0'; n++)
 	{
 		if (*(s + n) >= 97 && *(s + n) <= 122)
 		{
-			n = *(s + n) - 32;
-			return (n);
+			*(s + n) -= 32;
 		}
 		else if (*(s + n) >= 65 && *(s + n) <= 90)
 		{
-			m = *(s + n);
-			return (m);
+			*(s + n) = *(s + n);
 		}
 	}
-	return (0);
+	return (s);
 }
 
