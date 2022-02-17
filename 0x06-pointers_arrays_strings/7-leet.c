@@ -8,16 +8,20 @@
  */
 char *leet(char *s)
 {
-	int n;
+	int n = 0, m;
 	int lower[] = {97, 101, 111, 116, 108};
 	int upper[] = {65, 69, 79, 84, 76};
 	int num[] = {52, 51, 48, 55, 49};
 
-	for (n = 0; n >= 0 && n != '\0'; n++)
+	while (*(s + n) != '\0')
 	{
-		if ((*(s + n) == lower[]) || (*(s + n) == upper[]))
+		for (m = 0; m < 5; m++)
 		{
-			*(s + n) = num[];
+			if ((*(s + n) == lower[m]) || (*(s + n) == upper[m]))
+			{
+				*(s + n) = num[m];
+				break;
+			}
 		}
 	}
 	return (s);
