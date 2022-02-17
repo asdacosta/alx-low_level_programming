@@ -1,14 +1,17 @@
-# More pointers, arrays and strings
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about pointers and arrays in **C language**.
+> # More pointers, arrays and strings
 
-## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
+## Origin
+Completed this project during **Full Stack Software Engineering** from **Holberton School** at **ALX School**
+
+## Objective
+Learning more about pointers, arrays and strings in **C language**
+
+## Tested on
+* Ubuntu 20.04.2 LTS
+* Git Bash 2.32.0
+* Visual Studio Code
 
 ## Files
-All of the following files are programs written in C:
-
 | Filename | Description |
 | -------- | ----------- |
 | `0-strcat.c` | Concatenates two strings |
@@ -19,8 +22,8 @@ All of the following files are programs written in C:
 | `5-string_toupper.c` | Changes all lowercase letters of a string to uppercase |
 | `6-cap_string.c` | Capitalizes all words of a string |
 | `7-leet.c` | Encodes a string into 1337 |
-| `8-rot13.c` | Encodes a string using rot13 |
-| `100-print_number.c` | Prints an integer |
-| `101-magic.c` | Changes the value of an index of an integer array |
-| `102-infinite_add.c` | Adds two numbers |
-| `103-print_buffer.c` | Prints a buffer |
+| `100-rot13.c` | Encodes a string using rot13 |
+| `101-print_number.c` | Prints an integer |
+| `102-magic.c` | Changes the value of an index of an integer array |
+| `103-infinite_add.c` | Adds two numbers |
+| `104-print_buffer.c` | Prints a buffer |
