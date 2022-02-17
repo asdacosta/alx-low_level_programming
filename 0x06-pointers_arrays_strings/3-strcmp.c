@@ -9,7 +9,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int n;
+	int n, m;
 
 	for (n = 0; n >= 0 && n <= '\0'; n++)
 	{
