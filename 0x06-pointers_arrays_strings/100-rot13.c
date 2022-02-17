@@ -19,6 +19,7 @@ char *rot13(char *s)
 			if (*(s + n) == alp[m])
 			{
 				*(s + n) = rot13[m];
+				break;
 			}
 		}
 		n++;
