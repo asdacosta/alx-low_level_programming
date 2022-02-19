@@ -19,12 +19,12 @@ char *_strchr(char *s, char c)
 			m = 0;
 			while ((*(s + m) >= c) && (*(s + m) != '\0'))
 			{
-				_putchar(*(s + m));
+				return (*(s + m));
 			}
 		}
 		else
 		{
-			_putchar(null[n]);
+			return (null[n]);
 		}
 	}
 
