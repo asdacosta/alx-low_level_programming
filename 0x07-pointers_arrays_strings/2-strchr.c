@@ -10,7 +10,6 @@
 char *_strchr(char *s, char c)
 {
 	int n = 0, m;
-	char null[] = "NULL";
 
 	while (*(s + n) != '\0')
 	{
@@ -19,12 +18,12 @@ char *_strchr(char *s, char c)
 			m = 0;
 			while ((*(s + m) >= c) && (*(s + m) != '\0'))
 			{
-				return (*(s + m));
+				return (s + m);
 			}
 		}
 		else
 		{
-			return (null[n]);
+			return ('\0');
 		}
 	}
 
