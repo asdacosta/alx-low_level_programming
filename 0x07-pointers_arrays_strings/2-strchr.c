@@ -10,7 +10,6 @@
 char *_strchr(char *s, char c)
 {
 	int n = 0, m;
-	char p = 'NULL';
 
 	while (*(s + n) != '\0')
 	{
@@ -24,7 +23,7 @@ char *_strchr(char *s, char c)
 		}
 		else
 		{
-			_putchar(p);
+			return (NULL);
 		}
 	}
 
