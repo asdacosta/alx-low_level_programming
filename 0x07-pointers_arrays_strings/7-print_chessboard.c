@@ -6,7 +6,7 @@
  *
  * Return: Void
  */
-void print_chesssboard(char (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	unsigned int i, m = 0;
 
