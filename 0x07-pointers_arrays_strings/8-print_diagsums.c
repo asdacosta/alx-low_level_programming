@@ -11,24 +11,15 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int n, m, sum;
+	int i, sum1 = 0, sum2 = 0;
 
-	for (n = 0; n <= size; n++)
+	for (i = 0; i < (size * size); i++)
 	{
-		for (m = 0; m <= size; m++)
-		{
-			if (n = m)
-			{
-				sum += a[n][m];
-				printf("%d", sum);
-			}
-			else
-			{
-				break;
-			}
-			printf(", ");
-		}
-		printf("\n");
+		if (i % (size + 1) == 0)
+			sum1 += *(a + 1);
+		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
+			sum2 += *(a + i);
 	}
+	printf("%d, %d\n", sum1, sum2);
 }
 
