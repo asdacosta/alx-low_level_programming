@@ -4,7 +4,7 @@
 /**
  * print_diagsums - Prints the sum of two diagonals of a square
  *	matrix of integers
- * @s: Pointer to matrix
+ * @a: Pointer to matrix
  * @size: Integer size
  *
  * Return: Always 0
