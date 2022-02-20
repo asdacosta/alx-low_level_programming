@@ -1,14 +1,17 @@
 # Even more pointers, arrays and strings
 
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about pointers and arrays in **C language**.
+## Origin
+Completed this project during **Full Stack Software Engineering** from **Holberton School** at **ALX School**
 
-## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
+## Objective
+Learning about pointers, double pointers or pointers-to-pointers, multidimensional arrays like 2-D arrays and functions to manipulate strings in **C language**
+
+## Tested on
+* Ubuntu 20.04.3 LTS
+* Git Bash 2.32.0
+* Visual Studio Code
 
 ## Files
-All of the following files are programs written in C:
 
 | Filename | Description |
 | -------- | ----------- |
