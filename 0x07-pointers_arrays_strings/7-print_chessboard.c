@@ -8,18 +8,17 @@
  */
 void print_chesssboard(char (*a)[8])
 {
-	int n;
+	unsigned int i, m = 0;
 
-	for (n = 0; n < *a; n++)
+	for (i = 0; i < 64; i++)
 	{
-		if (*(a + n) == '39' || *(a + n) == '44')
+		if (i % 8 == 0 && i != 0)
 		{
-			break;
+			m = i;
+			_putchar('\n');
 		}
-		else
-		{
-			return (a + n);
-		}
+		_putchar(a[i / 8][i - m]);
 	}
+	_putchar('\n');
 }
 
