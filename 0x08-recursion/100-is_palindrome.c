@@ -8,7 +8,7 @@
  */
 int is_palindrome(char *s)
 {
-	int n, m;
+	int n = 0, m = 0;
 
 	if (n < 0)
 	{
@@ -18,11 +18,9 @@ int is_palindrome(char *s)
 			{
 				return (1);
 			}
-			else
-			{
-				return (0);
-			}
 		}
 	}
+
+	return (0);
 }
 
