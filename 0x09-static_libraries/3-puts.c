@@ -2,6 +2,6 @@
 
 void _puts(char *s)
 {
-	printf("Empty file");
+	return (0);
 }
 
