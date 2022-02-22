@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int my_name(int, char *);
+int my_name(int argc, char *argv[]);
 
 #endif
 
