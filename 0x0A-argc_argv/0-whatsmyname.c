@@ -1,13 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * my_name - Prints name of the program or argument run on command line
+ * main - Prints name of the program or argument run on command line
  * @argc: Number of programs on command line
  * @argv: Array of programs passed on command line
  *
  * Return: Always 0
  */
-int my_name(int argc __attribute__((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", argv[0]);
 
