@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * add - Adds positive numbers after the argument.
+ * main - Adds positive numbers after the argument.
  * @argc: Number of command line arguments
  * @argv: Array to command line arguments
  *
