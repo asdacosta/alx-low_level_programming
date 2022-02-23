@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Multiplies the two numbers passed on command line after arg
  * @argc: Number of command line arguments
  * @argv: Array of command line arguments
  *
- * Return: Always 0
+ * Return: 1 if program does not have two arguments
  */
 int main(int argc, char *argv[])
 {
@@ -15,11 +16,15 @@ int main(int argc, char *argv[])
 	{
 		for (n = 0; n < argc; n++)
 		{
-			mul = argv[1] * argv[2];
+			mul = atoi(argv[1]) * atoi(argv[2]);
 			printf("%d\n", mul);
 		}
 	}
+	else
+	{
+		printf("Error\n");
+	}
 
-	return (0);
+	return (1)
 }
 
