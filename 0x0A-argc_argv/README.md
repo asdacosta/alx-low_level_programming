@@ -1,13 +1,17 @@
-# Argc, argv
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about how to use arguments passed to a program in **C language**.
+> # Argc, argv
+## Origin
+Completed this project during **Full Stack Software Engineering** from **Holberton School** at **ALX School**
 
-## Technologies
-* C files are compiled using `gcc 4.8.4`
-* C files are written according to the C90 standard
-* Tested on Ubuntu 14.04 LTS
+## Objective
+Learning about how to use arguments passed on command line,argument count, argument vector and suppressing unused variables in **C language**
+
+## Tested on
+* Ubuntu `20.04 LTS`
+* Git Bash `2.32.0`
+* Visual Studio Code
+* C files was compiled using `gcc 9.3.0`
 
 ## Files
-All of the following files are programs written in C:
 
 | Filename | Description |
 | -------- | ----------- |
