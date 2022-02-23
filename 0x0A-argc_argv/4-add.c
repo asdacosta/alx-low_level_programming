@@ -11,11 +11,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int n, sum = 0;
+	int n, m, sum = 0;
 
 	if (argc > 2)
 	{
-		for (n = 0; n < argc; n++)
+		for (n = 1; n < argc; n++)
 		{
 			sum += atoi(argv[n]);
 		}
@@ -25,9 +25,15 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	else
+	else if (argc > 1)
 	{
-		printf("Error\n");
+		for (m = 1; m < argc; m++)
+		{
+			if (argv[m] >= 97 && argv[m] <= 122)
+			{
+				printf("Error\n");
+			}
+		}
 	}
 	return (1);
 }
