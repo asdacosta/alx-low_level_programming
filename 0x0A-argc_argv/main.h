@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int my_name(int argc, char *argv[]);
+int my_name(int argc __attribute__((unused)), char *argv[]);
 
 #endif
 
