@@ -11,7 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ar;
-	unsigned int ;
+	unsigned int n;
 
 	if (size == 0)
 		return (NULL);
@@ -22,8 +22,8 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	for (n = 0; n < size; n++)
-		cr[n] = c;
+		ar[n] = c;
 
-	return (cr);
+	return (ar);
 }
 
