@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 
 /**
  * add - Adds positive numbers after the argument.
@@ -23,8 +23,7 @@ int main(int argc, char *argv[])
 	}
 	else if (argc == 1)
 	{
-		return (0);
-		printf("\n");
+		printf("0\n");
 	}
 	else
 	{
