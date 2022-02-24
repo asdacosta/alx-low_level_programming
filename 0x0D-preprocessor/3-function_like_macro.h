@@ -2,7 +2,7 @@
 #define _FUNCTION_LIKE_MACRO_
 
 
-#define ABS(x) ((x >= 0) ? (x) : (x * -1))
+#define ABS(x) ((x) >= (0) ? (x) : ((x) * (-1)))
 
 #endif /* #ifndef _FUNCTION_LIKE_MACRO_ */
 
