@@ -10,7 +10,7 @@ void *malloc_checked(unsigned int b)
 {
 	char *n;
 
-	p = malloc(sizeof(b) * 5);
+	n = malloc(sizeof(b) * 5);
 	if (n == NULL)
 		exit(98);
 	return (n);
