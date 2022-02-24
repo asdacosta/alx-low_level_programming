@@ -2,22 +2,17 @@
 
 /**
  * malloc_checked - Allocates memory using malloc
- * @b: The integer
+ * @b: Amount of bytes
  *
  * Return: Void
  */
 void *malloc_checked(unsigned int b)
 {
-	unsined int *n, m;
+	char *n;
 
-	n = malloc(sizeof(b) * 5);
-	for (m = 0; m < b; m++)
-	{
-		if (n == NULL)
-			free(n);
-			printf("98\n");
-	}
-
-	printf("%d\n", n);
+	p = malloc(sizeof(b) * 5);
+	if (n == NULL)
+		exit(98);
+	return (n);
 }
 
