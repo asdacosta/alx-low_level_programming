@@ -19,6 +19,7 @@ void _is_zero(char *argv[])
 		}
 
 	for (i = 0; argv[2][i]; i++)
+	{
 		if (argv[2][i] != '0')
 		{
 			isn2 = 0;
@@ -30,6 +31,7 @@ void _is_zero(char *argv[])
 			printf("0\n");
 			exit(0);
 		}
+	}
 }
 
 /**
