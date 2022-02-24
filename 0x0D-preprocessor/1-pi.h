@@ -3,5 +3,5 @@
 
 #define PI 3.14159265359
 
-#endif // #ifndef _PI_
+#endif /* #ifndef _PI_ */
 
